@@ -26,6 +26,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func newButtonTaped(sender: AnyObject) {
+    }
+    
     @IBAction func buttonTaped(sender: AnyObject) {
         if let text = myText.text {
             myLabel.text = "Hello, " + text
