@@ -16,17 +16,47 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myText: UITextField!
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("viewDidDisappear")
+    }
+    
     override func viewDidLoad() {        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        myText.delegate = self
+        print("viewDidLoad")
     }
 
+    @IBAction func alertBtnTaped(sender: AnyObject) {
+        let dialog = UIAlertController(title: "Alert", message: "Some message", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+            _ -> Void in
+            dialog.dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+        dialog.addAction(action)
+        presentViewController(dialog, animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func newButtonTaped(sender: AnyObject) {
     }
     
     @IBAction func buttonTaped(sender: AnyObject) {
@@ -35,5 +65,19 @@ class ViewController: UIViewController {
         }
     }
 
+}
+
+extension ViewController : UITextFieldDelegate {
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        var resultStr = ""
+        if let text = myLabel.text {
+            resultStr += text
+        }
+        
+        myLabel.text = resultStr + string
+        return true
+    }
+    
 }
 

@@ -12,6 +12,13 @@
 		84BF24751D28F65200839593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BF24731D28F65200839593 /* Main.storyboard */; };
 		84BF24771D28F65200839593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BF24761D28F65200839593 /* Assets.xcassets */; };
 		84BF247A1D28F65200839593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BF24781D28F65200839593 /* LaunchScreen.storyboard */; };
+		84BF24821D292DC600839593 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF24811D292DC500839593 /* SecondViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		84BF24841D29414900839593 /* ConverterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF24831D29414900839593 /* ConverterController.swift */; settings = {ASSET_TAGS = (); }; };
+		84BF24861D294B7000839593 /* ConvertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF24851D294B7000839593 /* ConvertProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		84BF24881D294C5C00839593 /* RubToDollarConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF24871D294C5C00839593 /* RubToDollarConverter.swift */; settings = {ASSET_TAGS = (); }; };
+		84BF248A1D294CFF00839593 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF24891D294CFF00839593 /* Provider.swift */; settings = {ASSET_TAGS = (); }; };
+		84BF248C1D294D7900839593 /* LocalExchangeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF248B1D294D7900839593 /* LocalExchangeProvider.swift */; settings = {ASSET_TAGS = (); }; };
+		84BF248E1D294E3000839593 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF248D1D294E3000839593 /* ExchangeRate.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		84BF24761D28F65200839593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84BF24791D28F65200839593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84BF247B1D28F65200839593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BF24811D292DC500839593 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		84BF24831D29414900839593 /* ConverterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterController.swift; sourceTree = "<group>"; };
+		84BF24851D294B7000839593 /* ConvertProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertProtocol.swift; sourceTree = "<group>"; };
+		84BF24871D294C5C00839593 /* RubToDollarConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubToDollarConverter.swift; sourceTree = "<group>"; };
+		84BF24891D294CFF00839593 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		84BF248B1D294D7900839593 /* LocalExchangeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalExchangeProvider.swift; sourceTree = "<group>"; };
+		84BF248D1D294E3000839593 /* ExchangeRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,13 @@
 				84BF24761D28F65200839593 /* Assets.xcassets */,
 				84BF24781D28F65200839593 /* LaunchScreen.storyboard */,
 				84BF247B1D28F65200839593 /* Info.plist */,
+				84BF24811D292DC500839593 /* SecondViewController.swift */,
+				84BF24831D29414900839593 /* ConverterController.swift */,
+				84BF24851D294B7000839593 /* ConvertProtocol.swift */,
+				84BF24871D294C5C00839593 /* RubToDollarConverter.swift */,
+				84BF24891D294CFF00839593 /* Provider.swift */,
+				84BF248B1D294D7900839593 /* LocalExchangeProvider.swift */,
+				84BF248D1D294E3000839593 /* ExchangeRate.swift */,
 			);
 			path = Lecture1;
 			sourceTree = "<group>";
@@ -134,8 +155,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BF24841D29414900839593 /* ConverterController.swift in Sources */,
+				84BF24821D292DC600839593 /* SecondViewController.swift in Sources */,
+				84BF248A1D294CFF00839593 /* Provider.swift in Sources */,
+				84BF24861D294B7000839593 /* ConvertProtocol.swift in Sources */,
 				84BF24721D28F65200839593 /* ViewController.swift in Sources */,
 				84BF24701D28F65200839593 /* AppDelegate.swift in Sources */,
+				84BF24881D294C5C00839593 /* RubToDollarConverter.swift in Sources */,
+				84BF248E1D294E3000839593 /* ExchangeRate.swift in Sources */,
+				84BF248C1D294D7900839593 /* LocalExchangeProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +315,7 @@
 				84BF24801D28F65200839593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
